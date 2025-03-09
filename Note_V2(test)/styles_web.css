@@ -1,0 +1,120 @@
+/* CSS สำหรับทั้งหน้า Login และ Create an Account */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* กล่องฟอร์มของทั้งหน้า Login และ Create an Account */
+.login-container, .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box, .register-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.login-box h2, .register-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+.input-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a11cb;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+    background-color: #5a0dbc;
+}
+
+.options {
+    margin-top: 15px;
+}
+
+.options a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* เพิ่มความเฉพาะเจาะจงสำหรับหน้า Create an Account */
+body.register-page {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+}
+
+.register-box h2 {
+    color: #ff5b82;
+}
+
+.input-group input:focus {
+    border-color: #ff758c;
+    box-shadow: 0 0 5px rgba(255, 117, 140, 0.5);
+}
+
+.input-group button {
+    background-color: #ff758c;
+}
+
+.input-group button:hover {
+    background-color: #ff5b82;
+}
+
+.options a {
+    color: #ff758c;
+}
